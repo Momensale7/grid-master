@@ -1,0 +1,225 @@
+@media (min-width: 480px) {
+    .container {
+        grid-template-areas: "a a a a"
+            "b b b b"
+            "c c d d"
+            "e e e e"
+            "f f h h"
+            "g g h h"
+            "i i i i"
+            "j j j j";
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* .........................evaporator-sec............................ */
+
+    .evaporator-sec {
+        grid-area: a;
+        background-color: #eee;
+        padding: 50px 0;
+    }
+
+    .more {
+        font-family: var(--montserrat);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #9fa3a7;
+
+    }
+
+    h1 {
+        font-family: var(--arvo);
+        font-size: 35px;
+        font-weight: 400;
+        color: #333;
+        margin: 20px 0 10px;
+        text-align: center;
+        line-height: 1.4em;
+        /* max-width: 550px; */
+    }
+
+    .evaporator-sec a {
+        font-size: 14;
+        color: #27b9c2;
+    }
+
+    /* ............................evaporator-sec...................... */
+
+    /* ............................iphone-sec....................... */
+    .iphone-sec {
+        grid-area: b;
+        padding: 0px 20px 0 20px;
+        flex-direction: row;
+        padding-inline: 4%;
+
+    }
+
+    .iphone-sec h3 {
+        width: 60%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: var(--arvo);
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .iphone-sec .grey-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #9fa3a7;
+        max-width: 65%;
+
+    }
+
+    .iphone {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    /* ............................iphone-sec....................... */
+
+    /* ............................retina-sec....................... */
+    .retina-sec {
+        flex-direction: row;
+        padding-bottom: 0;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .retina-main {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .retina-text {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .retina-text .grey-text {
+        max-width: 92%;
+    }
+
+    .retina-main h3,
+    .retina-main .more {
+        margin-left: 11%;
+    }
+
+    /* ............................tv-sec....................... */
+    .tv-sec {
+        flex-direction: row-reverse;
+    }
+
+    .tv-caption {
+        width: 100%;
+    }
+
+    .tv-sec h3 {
+        max-width: 65%;
+        text-align: left;
+    }
+
+    .tv-sec .tv {
+        width: 100%;
+        position: relative;
+        left: -15%;
+    }
+}
+
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+/* ........................................media 992.................. */
+@media (min-width: 992px) {
+    .container {
+        grid-template-areas: "b b a a"
+            "c e e h"
+            "d g g h"
+            "f i j j";
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* .........................evaporator-sec............................ */
+
+    .evaporator-sec {
+        grid-area: a;
+        background-color: #eee;
+        padding: 50px 0;
+    }
+
+    .more {
+        font-family: var(--montserrat);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #9fa3a7;
+
+    }
+
+    h1 {
+        font-family: var(--arvo);
+        font-size: 48px;
+        font-weight: 400;
+        color: #333;
+        margin: 20px 0 10px;
+        text-align: center;
+        line-height: 60px;
+        max-width: 550px;
+    }
+
+    .evaporator-sec a {
+        font-size: 14;
+        color: #27b9c2;
+    }
+
+    /* ............................evaporator-sec...................... */
+
+    /* ............................iphone-sec....................... */
+    .iphone-sec {
+        grid-area: b;
+        padding: 0px 20px 0 20px;
+        flex-direction: row;
+        padding-inline: 8%;
+
+    }
+
+    .iphone-sec h3 {
+        width: 65%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: var(--arvo);
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .iphone-sec .grey-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #9fa3a7;
+        max-width: 65%;
+
+    }
+
+    .iphone {
+        width: 140%;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    /* ............................iphone-sec....................... */
+    /* ............................retina-sec....................... */
+    .retina-text .grey-text {
+        max-width: 95%;
+    }
+
+    /* ............................retina-sec....................... */
+
+}

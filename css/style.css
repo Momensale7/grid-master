@@ -1,0 +1,420 @@
+:root {
+    --open-sns:'Open Sans', sans-serif;
+    --arvo:'Arvo', serif;
+    --montserrat:'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--open-sns);
+    line-height: 26px;
+    /* overflow: hidden; */
+}
+.container{
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "a a a a"
+                        "b b b b"
+                        "c c c c"
+                        "d d d d"
+                        "e e e e"
+                        "f f f f"
+                        "g g g g"
+                        "h h h h"
+                        "i i i i"
+                        "j j j j";
+}
+img {
+    width: 100%;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+/* .........................evaporator-sec............................ */
+
+.evaporator-sec{
+    grid-area: a;
+    background-color:#eee;
+    padding: 50px 0;
+}
+.more {
+    font-family: var(--montserrat);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #9fa3a7;
+
+}
+h1 {
+    font-family: var(--arvo);
+    font-size: 10vw ;
+    font-weight: 400;
+    color:#333 ;
+    margin: 20px 0 10px ;
+    text-align: center;
+    line-height: 1.4em;
+    /* max-width: 550px; */
+}
+.evaporator-sec a {
+font-size: 14;
+color: #27b9c2;
+}
+/* ............................evaporator-sec...................... */
+
+
+/* ............................secb....................... */
+.iphone-sec{
+    grid-area:b ;
+    padding: 50px 50px 0 50px;
+}
+.iphone-sec h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+.iphone-sec ,.retina-sec .grey-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #9fa3a7;
+    
+}
+.iphone  {
+    padding: 30px 30px 0px 10px;
+}
+
+/* ............................keyboard-sec....................... */
+.keyboard-sec{
+    grid-area:c ;
+    background-color: #f05d42;
+    padding: 40px;
+}
+.keyboard-sec h3 {
+    max-width: 230px;
+margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #fffbfb;
+    text-align: center;
+}
+.keyboard-sec a ,.xbox-sec a ,.retina-sec a {
+    font-size: 14px ;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 26px;
+    color: #ffc80a;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.keyboard-sec span {
+    font-size:16px;
+}
+
+/* ............................keyboard-sec...................... */
+
+
+/* ............................xbox-sec....................... */
+
+.xbox-sec{
+    grid-area:d ;
+    background-color: #f7eff0;
+    padding: 40px;
+}
+.xbox-sec h3 ,.twitter-sec h3 ,.ipad-sec h3 {
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.xbox-sec a {
+    color: #27b9c2;
+}
+.xbox {
+    filter: drop-shadow(-20px 20px 5px rgba(0,0,0,0.1));
+    position: relative;
+    left: -7%;
+}
+
+/* ............................xbox-sec....................... */
+
+
+/* ............................retina-sec....................... */
+
+.retina-sec{
+    grid-area:e ;
+    /* background-color: chartreuse; */
+    padding-inline: 8%;
+    padding-block: 50px
+    ;
+}
+.retina-main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.retina-main h3 {
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+    margin: 20px 0 20px;
+    
+
+}
+.retina img {
+    position: relative;
+    left: -115% ;
+    width: 200%;
+    
+}
+.retina-sec a {
+    color: #27b9c2;
+    letter-spacing: 2px;
+}
+.retina-sec .grey-text {
+    margin-bottom: 10px;
+}
+
+/* ............................retina-sec....................... */
+
+
+/* ............................twitter-sec....................... */
+.twitter-sec{
+    grid-area: f;
+    background-color: #4bcfeb;
+    
+}
+.twitter-sec .twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    padding-right: 34px;
+    padding-left: 34px;
+    border-radius: 50%;
+    background-color: #48cedd;
+}
+.twitter img {
+    width: 43.5px;
+}
+.twitter-sec h3 {
+    color: #fff;
+    max-width: 180px;
+    
+}
+/* ............................twitter-sec....................... */
+
+
+/* ............................ipad-sec....................... */
+.ipad-sec{
+    grid-area:g ;
+    background-color: #9db3b4;
+    padding-top: 30px;
+    position: relative;
+    background-image: url(../images/ux.png);
+    background-position: 45% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+.ipad { 
+        position: relative;
+        left: -12%;
+        width: 90%;
+    }
+.ipad-sec .choice {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.ipad-sec h3 {
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    max-width: 250px;
+    padding-block: 31px;
+
+}
+
+/* ............................ipad-sec....................... */
+
+/* ............................disc-sec....................... */
+.disc-sec{
+    grid-area:h ;
+    background-color: #9979b9;
+    padding: 30px 5% 70px;
+    overflow: hidden;
+}
+.disc-circle{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 373px;
+height: 373px;
+border-radius: 50%;
+    background-color: #8166b0;
+}
+.pop {
+    display: flex;
+    align-items: center;
+    background-color:hsl(0deg 0% 100% / 8%);
+    border-radius: 20px ;
+    padding: 2px 13px 1px 13px;
+}
+.pop span , .meet-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 23px;
+    letter-spacing: 2.5px;
+}
+.pop img {
+    height: 50%;
+    padding-right: 5px;
+}
+.image-disc {
+    width: 239px;
+    margin-top: 20px;
+}
+.image-disc img {
+    position: relative;
+    left: -3%;
+}
+.meet-label{
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+
+.disc-sec h2 {
+    font-family: var(--arvo);
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 36px;
+    margin: 20px 0 10px;
+}
+.disc-sec .text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    width: 80%;
+    max-width: 290px;
+    text-align: center;
+}
+.disc-sec .button-l {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* ............................disc-sec....................... */
+
+/* ............................experience-sec....................... */
+.experience-sec{
+    grid-area:i ;
+    background-color: #f4f8e5;
+    padding: 30px 0;
+}
+.green-pop {
+    font-size: 8px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    background-color: #84c924;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.experience-sec h3 {
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    color: #333;
+    font-weight: 400;
+    margin: 10px 0;
+    width: 70%;
+    text-align: center;
+}
+/* ............................experience-sec....................... */
+
+/* ............................tv-sec....................... */
+
+.tv-sec{
+    grid-area:j ;
+    background-color: #3d402c;
+    flex-direction: column-reverse;
+    padding: 0 5% 30px;
+}
+.tv-caption{
+    max-width: 90%;
+     margin: 10px auto;
+}
+.tv-sec h3{
+    font-family: var(--arvo);
+    font-size: 22px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;    
+}
+.tv-sec .tv {
+    position: relative;
+    left: -19%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
